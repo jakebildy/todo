@@ -2,7 +2,7 @@
 <html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>To Do</title>
+    <title>todo</title>
 
     <style>
         * {
@@ -142,10 +142,39 @@
 </head>
 <body>
 <song>
-<iframe class="iframe" src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX7cBprxbt1Fn" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></song>
+<iframe id='iframe' class="iframe" src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX7cBprxbt1Fn" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></song>
 <txt>
 
-    <runic class="runes"><hov1>F</hov1> <hov1>O</hov1> <hov1>Y</hov1> <hov1>Z</hov1></runic>
+    <runic class="runes">
+
+        <hov1 onclick="function changeMusic() {
+
+              document.getElementById('iframe').src = 'https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX7cBprxbt1Fn';
+    }
+    changeMusic();">F</hov1>
+
+
+        <hov1 onclick="function changeMusic() {
+
+        document.getElementById('iframe').src = 'https://open.spotify.com/embed/user/ramsiz976/playlist/4zG4hPzjLzVhNA29p4SkQl';
+        }
+        changeMusic();">O</hov1>
+
+
+        <hov1 onclick="function changeMusic() {
+
+              document.getElementById('iframe').src = 'https://open.spotify.com/embed/user/chillhopmusic/playlist/0CFuMybe6s77w6QQrJjW7d';
+    }
+    changeMusic();">Y</hov1>
+
+
+        <hov1 onclick="function changeMusic() {
+
+              document.getElementById('iframe').src = 'https://open.spotify.com/embed/track/2374M0fQpWi3dLnB54qaLX';
+    }
+    changeMusic();">Z</hov1>
+
+    </runic>
 
     <time>five thirty three</time>
 

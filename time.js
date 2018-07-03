@@ -20,6 +20,8 @@ window.setInterval(function() {
     var min = d.getMinutes();
     var hr = d.getHours() % 12;
 
+    if (hr ==0) { hr = 12;}
+
     if (hr > 9){
         $('clock').css({ left : '3.3%'});
     }
