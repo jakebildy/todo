@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @font-face {
+            font-family: "Runes";
+            src: url(Futhark-Gothic.ttf) format("truetype");
+        }
+        runic.runes {
+            font-family: "Runes", Verdana, Tahoma;
+        }
+
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .background {
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+            z-index: -1;
+        }
+
+        txt {
+            z-index: 1;
+            color: aliceblue;
+            text-align: center;
+            font-size: 64px;
+            font-family: Futura,Trebuchet MS,Arial,sans-serif;
+            text-shadow: 2px 2px 0px #FF0000;
+        }
+
+        add_todo {
+            position: absolute;
+            left: 49%;
+            top: 15%;
+            font-size: 80px;
+            -moz-transition: all .2s ease-in;
+            -o-transition: all .2s ease-in;
+            -webkit-transition: all .2s ease-in;
+            transition: all .2s ease-in;
+        }
+
+        add_todo:hover {
+            color: gray;
+            top: 18%;
+            left: 49.2%;
+            font-size: 70px;
+        }
+
+        runic {
+            position: absolute;
+            bottom: 12%;
+            right: 4%;
+            font-size: 50px;
+        }
+
+        hov1 {
+            -moz-transition: all .2s ease-in;
+            -o-transition: all .2s ease-in;
+            -webkit-transition: all .2s ease-in;
+            transition: all .2s ease-in;
+        }
+
+        hov1:hover {
+            color: gray;
+        }
+
+        todo_title {
+            position: absolute;
+            left: 47%;
+            top: 5%;
+        }
+
+        iframe {
+            position: absolute;
+            right: 0%;
+            bottom: -39%;
+        }
+
+        time {
+            position: absolute;
+            left: 2%;
+            bottom: 1%;
+            font-size: 40px;
+        }
+
+
+        rim {
+            position: absolute;
+            left: 0.8%;
+            top: -9%;
+            font-size: 230px;
+            font-style: italic;
+        }
+
+        clock {
+            position: absolute;
+            left: 4.3%;
+            top: 6.1%;
+            font-size: 60px;
+        }
+
+        minute {
+            position: absolute;
+            left: -0.2%;
+            top: 6.7%;
+            font-size: 49px;
+            /* Initial value for rotate is needed for transition to work */
+            transform:rotate(0);
+
+            /* CSS transition creates smooth effect */
+            transition:all 1.5s;
+        }
+
+        input[type=text] {
+            position: absolute;
+            border: none;
+            left: 36%;
+            top: 20%;
+            background: none;
+            color: aliceblue;
+            text-align: center;
+            font-size: 40px;
+            font-family: Futura,Trebuchet MS,Arial,sans-serif;
+            text-shadow: 2px 2px 0px #FF0000;
+            font-style: italic;
+        }
+
+        body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<song>
+<iframe class="iframe" src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX7cBprxbt1Fn" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></song>
+<txt>
+
+    <runic class="runes"><hov1>F</hov1> <hov1>O</hov1> <hov1>Y</hov1> <hov1>Z</hov1></runic>
+
+    <time>five thirty three</time>
+
+    <rim>○</rim>
+    <clock>5</clock>
+
+    <minute>&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;◉</minute>
+
+<todo_title><b><u>todo</u></b></todo_title>
+    <p></p>
+    <input type="text" placeholder="◈"></input>
+
+   <add_todo type="button"><b>◈</b></add_todo>
+
+</txt>
+<div class="imgbox"><img src="http://4kpapers.com/assets/2016/11/11/dark-forest-wallpaper.jpg" class="background" alt="background" ></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="hov1.js"></script>
+<script src="time.js"></script>
+</body>
+</html>
